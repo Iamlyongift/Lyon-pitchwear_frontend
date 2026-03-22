@@ -24,6 +24,7 @@ import AdminLogin from "../pages/admin/Login";
 import ResetPassword from "../pages/auth/ResetPassword";
 import ProductForm from "../pages/admin/ProductForm";
 import VerifyEmail from "../pages/auth/VerifyEmail";
+import AuthCallback from "../pages/auth/AuthCallback";
 
 // Protected Route — redirects to login if not authenticated
 const ProtectedRoute = ({ children }) => {
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
   { path: "/", element: <Home /> },
   { path: "/shop", element: <Shop /> },
   { path: "/products/:id", element: <ProductDetail /> },
+  { path: "/auth/callback", element: <AuthCallback /> },
 
   // Auth routes
   { path: "/login", element: <Login /> },
